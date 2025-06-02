@@ -1,0 +1,23 @@
+@use './blocks/normalize' as normalize;
+@use './base/navbar.scss' as navbar;
+@use './base/about.scss' as about;
+@use './base/info.scss' as info;
+@use './base/featured.scss' as featured;
+@use './base/process.scss' as process;
+@use './base/clients.scss' as clients;
+@use './base/staircase.scss' as staircase;
+@use './base/featured-projects' as featured-projects;
+@use './base/team.scss' as team;
+@use './base/connection' as connection;
+@use './base/footer' as footer;
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 auto;
+}

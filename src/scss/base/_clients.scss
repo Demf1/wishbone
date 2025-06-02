@@ -1,0 +1,50 @@
+.clients {
+    color: #ECE7E4;
+    
+    &__container {
+        padding: 125px;
+        background-color: #403E3B;
+    }
+    &__subtitle {
+        color: #FFFFFF;
+    }
+    &__content{
+        position: relative;
+
+        max-width: 450px;
+    }
+    &__wrapper {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 730px;
+        width: 432px;
+        height: 290px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 96px;
+        padding-top: 50px;   
+    }
+    &__logo {
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 30px;
+        width: 128px;
+        img {
+            object-fit: center;
+            width: auto;
+            filter: brightness(0) invert(1);
+            opacity: 0.8;
+            transition: var(--transition);
+            &:hover {
+                opacity: 1;
+            }
+            
+        }
+    }
+    &__logos {
+        height: 78px;
+    }
+}
