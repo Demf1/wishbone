@@ -10,6 +10,7 @@
 @use './base/team.scss' as team;
 @use './base/connection' as connection;
 @use './base/footer' as footer;
+@use './base/media' as media;
 
 * {
     font-family: "Poppins", sans-serif;

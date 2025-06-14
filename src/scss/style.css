@@ -794,12 +794,13 @@ template {
 }
 
 .footer {
+  margin-bottom: 0;
   height: 204px;
 }
 .footer__content {
   position: relative;
   background-color: #F7F7F7;
-  padding: 60px 136px;
+  padding: 75px 136px;
 }
 .footer__descr {
   width: 700px;
@@ -826,6 +827,144 @@ template {
   height: 25px;
 }
 
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 0 120px;
+  }
+  .navbar__title {
+    font-size: 1.25rem;
+  }
+  .navbar__menu li {
+    margin-left: 32px;
+  }
+  .navbar__menu li:last-child {
+    margin-right: 31px;
+  }
+  .navbar__btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+  .about {
+    height: 720px;
+  }
+  .about__wrapper {
+    max-width: 1200px;
+  }
+  .about__content {
+    flex: 0 0 600px;
+    padding: 100px 60px;
+  }
+  .about__img {
+    flex: 0 0 600px;
+    height: 720px;
+  }
+  .info {
+    padding: 80px 40px;
+  }
+  .info__content {
+    width: 1100px;
+  }
+  .featured {
+    height: 600px;
+  }
+  .featured__info {
+    right: 60px;
+    max-width: 300px;
+    padding: 30px;
+  }
+  .featured__info h3 {
+    letter-spacing: 2px;
+  }
+  .process {
+    padding: 100px 0;
+  }
+  .process__items {
+    margin-top: 47px;
+    gap: 30px;
+  }
+  .process__icons {
+    width: 117px;
+    height: 102px;
+  }
+  .clients__container {
+    padding: 125px;
+  }
+  .clients__wrapper {
+    left: 730px;
+    width: 432px;
+    gap: 96px;
+    padding-top: 50px;
+  }
+  .clients__logo {
+    height: 30px;
+    width: 128px;
+  }
+  .clients__logos {
+    height: 78px;
+  }
+  .staircase {
+    height: 600px;
+  }
+  .staircase__info {
+    left: 60px;
+  }
+  .featured-projects__content {
+    padding: 120px 0;
+  }
+  .featured-projects__text {
+    padding-left: 136px;
+  }
+  .featured-projects__grid {
+    margin: 0 136px;
+  }
+  .featured-projects__title {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .featured-projects__descr {
+    font-size: 24px;
+  }
+  .featured-projects__item-link {
+    margin-top: 370px;
+    left: 70px;
+    width: 133px;
+    font-size: 16px;
+  }
+  .team {
+    height: 392px;
+    padding-bottom: 100px;
+  }
+  .team__content {
+    margin: 100px 136px 100px 0;
+    width: 1200px;
+  }
+  .team__head {
+    margin-left: 136px;
+    max-width: 380px;
+  }
+  .team__descr {
+    margin-left: 100px;
+  }
+  .connection__content {
+    padding: 100px 136px;
+  }
+  .connection__title {
+    left: 136px;
+    font-size: 40px;
+  }
+  .connection__link {
+    right: 136px;
+  }
+  .footer__content {
+    padding: 75px 136px;
+  }
+  .footer__logos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 136px;
+  }
+}
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;

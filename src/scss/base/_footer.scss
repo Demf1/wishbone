@@ -1,9 +1,10 @@
 .footer {
+    margin-bottom: 0;
     height: 204px;
     &__content {
         position: relative;
         background-color: #F7F7F7;
-        padding: 60px 136px;
+        padding: 75px 136px;
     }
     &__descr {
         width: 700px;
