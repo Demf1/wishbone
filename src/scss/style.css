@@ -965,6 +965,185 @@ template {
     right: 136px;
   }
 }
+@media (min-width: 992px) {
+  .navbar {
+    padding: 0 80px;
+  }
+  .navbar__title {
+    font-size: 1.2rem;
+  }
+  .navbar__menu li {
+    margin-left: 28px;
+  }
+  .navbar__btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+  }
+  .about {
+    height: 600px;
+  }
+  .about__wrapper {
+    max-width: 960px;
+  }
+  .about__content {
+    padding: 80px 50px;
+  }
+  .about__img {
+    height: 600px;
+  }
+  .about__subtitle {
+    font-size: 14px;
+  }
+  .about__title {
+    font-size: 42px;
+  }
+  .about__descr {
+    font-size: 18px;
+  }
+  .about__link {
+    width: 150px;
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+  .info {
+    padding: 70px 30px;
+  }
+  .info__content {
+    width: 900px;
+    gap: 20px;
+  }
+  .featured {
+    height: 550px;
+  }
+  .featured__info {
+    right: 50px;
+    max-width: 320px;
+    padding: 28px;
+  }
+  .featured__info h3 {
+    font-size: 14px;
+    letter-spacing: 1.8px;
+  }
+  .process {
+    padding: 90px 60px;
+  }
+  .process__items {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .process__item {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .process__icons {
+    width: 110px;
+    height: 95px;
+  }
+  .clients__container {
+    padding: 100px 60px;
+  }
+  .clients__content {
+    max-width: 450px;
+  }
+  .clients__wrapper {
+    left: 550px;
+    width: 380px;
+    gap: 70px;
+  }
+  .clients__logo {
+    height: 45px;
+  }
+  .staircase {
+    height: 550px;
+  }
+  .staircase__info {
+    left: 50px;
+    max-width: 285px;
+  }
+  .featured-projects__content {
+    padding: 100px 60px;
+  }
+  .featured-projects__text {
+    padding-left: 80px;
+    width: 717px;
+  }
+  .featured-projects__grid {
+    margin: 0 60px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .featured-projects__title {
+    font-size: 36px;
+  }
+  .featured-projects__descr {
+    font-size: 22px;
+  }
+  .featured-projects__item-link {
+    margin-top: 300px;
+    left: 50px;
+  }
+  .featured-projects__item-title {
+    top: 40px;
+    left: 40px;
+  }
+  .team {
+    height: 500px;
+    padding: 100px 60px 100px 60px;
+  }
+  .team__content {
+    margin: 0 60px 0 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+  }
+  .team__head {
+    margin-left: 0;
+    height: auto;
+    max-width: 350px;
+  }
+  .team__title {
+    font-size: 32px;
+  }
+  .team__list {
+    grid-template-columns: 395px 280px;
+  }
+  .connection {
+    height: 314px;
+  }
+  .connection__content {
+    padding: 100px 60px;
+  }
+  .connection__descr {
+    width: 576px;
+    height: 114px;
+  }
+  .connection__title {
+    width: 569px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60px;
+    font-size: 36px;
+    margin: 0;
+  }
+  .connection__link {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+  }
+  .footer {
+    height: 204px;
+  }
+  .footer__content {
+    padding: 75px 60px;
+  }
+  .footer__descr {
+    width: 700px;
+  }
+}
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
