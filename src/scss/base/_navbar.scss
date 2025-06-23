@@ -1,14 +1,20 @@
 .navbar {
     background-color: #fff;
     padding: 0 120px;
+    @media (max-width: 992px) {
+        padding: 0 30px;
+    }
     &__item {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__title {
-        font-size: 1.25rem;
+        font-size: 20px;
         font-weight: bold;
+        @media (max-width: 992px) {
+            font-size: 16px;
+        }
         a {
             text-decoration: none;
             color: #333;
@@ -21,15 +27,33 @@
         display: flex;
         align-items: center;
         font-size: 14px; 
+        @media(max-width: 576px) {
+            li {
+                
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
         li {
             margin-left: 32px;
+            @media(max-width: 768px) {
+                margin-left: 11px;
+            }
             &:last-child {
                 margin-right: 31px;
+                @media(max-width:768px) {
+                    margin-right: 11px;
+                }
             }
+            
             a {
                 text-decoration: none;
                 color:  #1B1A1A;
                 font-size: 15px;
+                @media(max-width: 768px) {
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -37,11 +61,20 @@
         background-color: #333;
         color: #fff;
         border: none;
-        padding: 0.75rem 1.5rem;
+        padding: 12px 24px;
         border-radius: 0.3rem;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 16px;
         text-decoration: none;
         display: inline-block;
+        @media (max-width: 1200px) {
+            padding: 12px 0;
+        }
+        @media (max-width: 992px) {
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
     }
 }
