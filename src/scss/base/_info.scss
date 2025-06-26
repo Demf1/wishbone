@@ -1,27 +1,69 @@
 .info {
     padding: 60px 20px;
     &__content {
-        width: 768px;
+        width: 100%;
         display: grid;
         grid-template-columns: 34% 66%;
         gap: 10px;
         margin: 0 auto;
+        @media(max-width:992px ) {
+            position: relative;
+            display: block;
+        }
     }
     &__title {
         font-weight: normal;
         font-size: 38px;
         margin: 0;
         margin-bottom: 30px;
+        margin-left: 210px;
+        @media(max-width: 992px) {
+            position: absolute;
+            margin: 0 auto;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media(max-width: 768px) {
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+        }
     }
     &__item {
+        width: 502px;
         line-height: 1.6;
-        p {
+        p { 
             font-size: 16px;
+            margin-bottom: 10px;
+            span {
+                display: block;
+                margin-bottom: 10px;
+            }
+            @media(max-width:992px) {
+                font-size: 14px;
+            } 
+        }
+        @media(max-width:992px) {
+            text-align: center;
+            padding: 40px;
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
         }
     }
     &__preview {
         position: relative;
         margin-top: 10px;
+        @media(max-width:992px) {
+            position: absolute;
+            top: 90%;
+            transform: translateX(-50%);
+        }
+        @media(max-width: 768px) {
+            left: 40%;
+            transform: translateX(-50%);
+        } 
     }
     &__img {
         width: 84px;
@@ -46,11 +88,18 @@
         h3 {
         font-weight: normal;
         margin: 0 auto;
-    }
+        @media(max-width:992px) {
+            font-size: 14px;
+        }
+        }
         span {
         color : #645C55;
         font-size: 14px;
         margin: 0 auto;
+        @media(max-width:992px) {
+            font-size: 15px;
+            text-size-adjust: 55%;
+        }
         }
     }
 }

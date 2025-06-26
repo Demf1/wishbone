@@ -7,11 +7,18 @@
         display: flex;
         justify-content: space-between;
         width: 1200px;
+        @media(max-width:1200px) {
+            justify-content: initial;
+            width: 100%;
+        }
     }
     &__head {
         margin-left: 136px;
         height: 392px;
         max-width: 380px;
+        @media(max-width:1200px) {
+            margin-left: 30px;
+        }
     }
     &__title {
         font-size: 32px;
@@ -33,7 +40,12 @@
     &__list {
         display: grid;
         grid-template-columns: 395px 280px;
-        
+        @media(max-width:992px) {
+            grid-template-columns: 251px 237px;
+        }
+        @media(max-width:768px) {
+            grid-template-columns: 190px 190px;
+        }
     }
     &__item {
         position: relative;

@@ -4,9 +4,11 @@
         position: relative;
         padding: 100px 136px;
         background-color: #CEC4BC;
+        @media(max-width:992px) {
+            padding: 100px 25px;
+        }
     }
     &__descr {
-        width: 576px;
         height: 114px;
     }
     &__subtitle {
@@ -25,6 +27,14 @@
         color: #1B1A1A;
         font-size: 40px;
         font-weight: normal;
+        @media(max-width:992px) {
+            width: 312px;
+            left: 30px;
+            font-size: 24px;
+        }
+        @media(max-width:768px) {
+            font-size: 20px;
+        }
     }
     &__link {
         position: absolute;
@@ -33,5 +43,8 @@
         right: 136px;
         color: #1B1A1A;
         text-decoration: none;
+        @media(max-width:768px) {
+            right: 60px;
+        }
     }
 }

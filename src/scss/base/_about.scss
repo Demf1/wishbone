@@ -8,9 +8,17 @@
     &__wrapper {
         display: flex;
         height: 100%;
-        max-width: 1440px;
+        width: 1440px;
         margin: 0 auto;
         position: relative;
+        @media(max-width: 992px) {
+            width: 992px;
+            overflow: hidden;
+            padding: 0 auto;
+        }
+        @media(max-width: 768px) {
+            width: 576px;
+        }
     }
     &__content {
         flex: 0 0 720px;
@@ -26,7 +34,7 @@
             padding: 100px 36px;
         }
         @media(max-width:992px) {
-            flex: 0 0 800px;
+            flex: 0 0 992px;
         }
         @media(max-width:768px) {
             flex: 0 0 600px;
@@ -52,6 +60,19 @@
         @media(max-width: 1200px) {
             text-align: center;
         }
+        @media(max-width:992px) {
+            text-align: center;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media(max-width: 768px) {
+            position: absolute;
+            right: 38%;
+            top: 15%;
+            font-size: 12px;
+        }
     }
     &__title {
         font-size: 48px;
@@ -61,12 +82,40 @@
         @media(max-width: 1200px) {
             text-align: center;
         }
+        @media(max-width:992px) {
+            text-align: center;
+            width: 768px;
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translateX(-50%);
+            font-size: 24px;
+        }
+        @media(max-width: 768px) {
+            width: 576px;
+            position: absolute;
+            left: 51%;
+            top: 22%;  
+        }
     }
     &__descr {
         font-size: 18px;
         margin-bottom: 30px;
         @media(max-width: 1200px) {
             text-align: center;
+        }
+        @media(max-width: 992px) {
+            width: 768px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media(max-width: 768px) {
+            position: absolute;
+            left: 48%;
+            top: 36%;
+            transform: translateX(-50%);  
+            width: 576px;
         }
     }
     &__link {
@@ -86,6 +135,12 @@
             top: 80%;
             right: 50%;
             transform: translateX(50%);
+        }
+        @media(max-width: 992px) {
+            right: 50%;
+        }
+        @media(max-width: 768px) {
+            right: 50%;
         }
     }
 }
