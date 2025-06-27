@@ -440,8 +440,9 @@ template {
 }
 @media (max-width: 1200px) {
   .about__content {
-    flex: 0 0 1000px;
+    flex: 0 0 1200px;
     padding: 100px 36px;
+    padding-right: 234px;
   }
 }
 @media (max-width: 992px) {
@@ -457,6 +458,11 @@ template {
 .about__img {
   flex: 0 0 720px;
   height: 720px;
+}
+@media (max-width: 1200px) {
+  .about__img {
+    background-color: #ECE7E4;
+  }
 }
 .about__img img {
   width: 100%;
@@ -569,8 +575,8 @@ template {
   .about__link {
     position: absolute;
     top: 80%;
-    right: 50%;
-    transform: translateX(50%);
+    right: 45%;
+    transform: translateX(-50%);
   }
 }
 @media (max-width: 992px) {
