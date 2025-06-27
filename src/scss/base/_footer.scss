@@ -38,5 +38,9 @@
         @media(max-width:768px) {
             right: 16px;
         }
+        @media(max-width: 576px) {
+            right: 34%;
+            top: 85%;
+        }
     }
 }

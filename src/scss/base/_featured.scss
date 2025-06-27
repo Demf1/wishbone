@@ -26,6 +26,9 @@
             position: absolute;
             right: -5%;
         }
+        @media(max-width:576px) {
+            right: 0%;
+        }
         h3 {
             font-weight: normal;
             text-transform: uppercase;

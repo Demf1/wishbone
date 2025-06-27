@@ -1,6 +1,9 @@
 .process {
     padding: 100px 0;
     text-align: center;
+    @media(max-width:576px) {
+        padding: 15px 0;
+    }
     &__items {
         display: flex;
         justify-content: space-between;
