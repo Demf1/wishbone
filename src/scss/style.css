@@ -852,6 +852,11 @@ template {
   margin-top: 47px;
   gap: 30px;
 }
+@media (max-width: 576px) {
+  .process__items {
+    display: block;
+  }
+}
 .process__item {
   flex: 1;
   max-width: 300px;
