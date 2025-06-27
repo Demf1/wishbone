@@ -1,0 +1,181 @@
+.about {
+    position: relative;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    @media(max-width:992px) {
+        align-items: normal;
+    }
+    &__wrapper {
+        display: flex;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        @media(max-width: 992px) {
+            width: 100%;
+            overflow: hidden;
+            padding: 0 auto;
+        }
+        @media(max-width: 768px) {
+            width: 100%;
+        }
+    }
+    &__content {
+        flex: 0 0 720px;
+        padding: 100px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #ECE7E4;
+        position: relative;
+        z-index: 2;
+        @media(max-width:1200px) {
+            flex: 0 0 993px;
+            padding: 160px 36px;
+            padding-right: 234px;
+        }
+        @media(max-width:992px) {
+            flex: 0 0 769px;
+        }
+        @media(max-width:768px) {
+            flex: 0 0 600px;
+        }
+        @media(max-width:576px) {
+            flex: 0 0 425px;
+            padding: 360px 60px;
+        }
+    }
+    &__img {
+        flex: 0 0 720px;
+        height: 720px;
+        @media(max-width:1200px) {
+            display: none;
+            background-color: #ECE7E4;
+        }
+        @media(max-width:576px) {
+            background-color: #ECE7E4;
+        }
+        @media(max-width:576px) {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            @media(max-width:1200px) {
+                display: none;
+            }
+        }
+    }
+    &__subtitle {
+        color: #645C55;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        @media(max-width: 1200px) {
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 18%;
+        }
+        @media(max-width:992px) {
+            text-align: center;
+            
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media(max-width: 768px) {
+           
+            right: 20%;
+            top: 15%;
+            font-size: 12px;
+        }
+        @media(max-width:576px) {
+            right: 10%;
+        }
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: normal;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        @media(max-width: 1200px) {
+            margin-left: 197px;
+            text-align: center;
+        }
+        @media(max-width:992px) {
+            margin-left: 0;
+            text-align: center;
+            width: 768px;
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translateX(-50%);
+            font-size: 24px;
+        }
+        @media(max-width: 768px) {
+            width: 576px;
+            left: 51%;
+            top: 22%;  
+        }
+        @media(max-width:576px) {
+            font-size: 18px;
+            left: 50%;
+        }
+    }
+    &__descr {
+        font-size: 18px;
+        margin-bottom: 30px;
+        @media(max-width: 1200px) {
+            margin-left: 197px;
+            text-align: center;
+        }
+        @media(max-width: 992px) {
+            margin-left: 0;
+            width: 768px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media(max-width: 768px) {
+            position: absolute;
+            left: 48%;
+            top: 36%;
+            transform: translateX(-50%);  
+            width: 576px;
+        }
+        @media(max-width:576px) {
+            font-size: 16px;
+            width: 400px;
+            left: 50%;
+        }
+    }
+    &__link {
+        width: 150px;
+        display: inline-block;
+        padding: 12px 30px;
+        color: #1B1A1A;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: #555;
+        }
+        @media(max-width: 1200px) {
+            position: absolute;
+            top: 80%;
+            right: 43%;
+            
+        }
+        @media(max-width: 992px) {
+            right: 50%;
+            transform: translateX(50%);
+        }
+        @media(max-width: 768px) {
+            right: 50%;
+        }
+    }
+}
