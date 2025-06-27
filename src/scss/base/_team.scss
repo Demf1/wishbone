@@ -19,10 +19,16 @@
         @media(max-width:1200px) {
             margin-left: 30px;
         }
+        @media(max-width:576px) {
+            margin-left: 10px;
+        }
     }
     &__title {
         font-size: 32px;
         font-weight: normal;
+        @media(max-width:576px) {
+            font-size: 14px;
+        }
     }
     &__subtitle {
         font-size: 14px;
@@ -46,6 +52,7 @@
         @media(max-width:768px) {
             grid-template-columns: 190px 190px;
         }
+        
     }
     &__item {
         position: relative;
@@ -55,12 +62,24 @@
         margin-left: 100px;
         top: 30%;
         transform: translateY(-50%);
+        @media(max-width:576px) {
+            margin-left: 10px;
+            top: 83%;
+        }
         h3 {
             font-weight: normal;
             margin: 0 auto;
+            font-size: 17px;
+            @media(max-width:576px) {
+                font-size: 8px;
+            }
         }
         p {
             margin: 0 auto;
+            font-size: 14px;
+            @media(max-width:576px){
+                font-size: 8px;
+            }
         }
     }
 }
